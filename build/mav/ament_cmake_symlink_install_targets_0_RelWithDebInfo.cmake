@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/lee/workspace/ros2_ex_mav/build/mav/mav1" "/home/lee/workspace/ros2_ex_mav/build/mav/mav2" "/home/lee/workspace/ros2_ex_mav/build/mav/mav3" "/home/lee/workspace/ros2_ex_mav/build/mav/mav4" "TARGETS" "mav1" "mav2" "mav3" "mav4" "DESTINATION" "lib/mav")

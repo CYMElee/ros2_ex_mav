@@ -1,0 +1,1 @@
+/home/lee/workspace/ros2_ex_mav/build/px4_msgs/rosidl_generator_cpp/px4_msgs/msg/detail/camera_capture__builder.hpp

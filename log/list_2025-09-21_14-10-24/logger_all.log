@@ -1,0 +1,66 @@
+[0.045s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/lee/workspace/ros2_ex_mav']
+[0.045s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/lee/workspace/ros2_ex_mav'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x76ef8438cd00>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x76ef84357d30>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x76ef84357d30>>, mixin_verb=('list',))
+[0.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.065s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lee/workspace/ros2_ex_mav'
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['ignore', 'ignore_ament_install']
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'ignore'
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'ignore_ament_install'
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['colcon_pkg']
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'colcon_pkg'
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['colcon_meta']
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'colcon_meta'
+[0.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['ros']
+[0.066s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'ros'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['cmake', 'python']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'cmake'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'python'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['python_setup_py']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'python_setup_py'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/build) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/build) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/build) ignored
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/install) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/install) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/install) ignored
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/log) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/log) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/log) ignored
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'ignore_ament_install'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['colcon_pkg']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'colcon_pkg'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['colcon_meta']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'colcon_meta'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['ros']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'ros'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['cmake', 'python']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'cmake'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'python'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['python_setup_py']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'python_setup_py'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['ignore', 'ignore_ament_install']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'ignore_ament_install'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['colcon_pkg']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'colcon_pkg'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['colcon_meta']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'colcon_meta'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['ros']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'ros'
+[0.075s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex_mav/src/MAV' with type 'ros.ament_cmake' and name 'MAV'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'ignore_ament_install'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['colcon_pkg']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'colcon_pkg'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['colcon_meta']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'colcon_meta'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['ros']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'ros'
+[0.076s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex_mav/src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

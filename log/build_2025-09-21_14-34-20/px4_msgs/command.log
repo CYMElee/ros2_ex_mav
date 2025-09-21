@@ -1,0 +1,2 @@
+Invoking command in '/home/lee/workspace/eos/ros2_ex_mav/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/eos/ros2_ex_mav/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/eos/ros2_ex_mav/install/px4_msgs
+Invoked command in '/home/lee/workspace/eos/ros2_ex_mav/build/px4_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/eos/ros2_ex_mav/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/eos/ros2_ex_mav/install/px4_msgs

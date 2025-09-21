@@ -1,0 +1,63 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/mav': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex_mav/src/MAV -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex_mav/install/mav
+[0.013s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.076s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.079s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.092s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.093s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.095s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.099s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.104s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.117s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.118s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.170s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.190s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.195s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.202s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.203s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.236s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/cmake)
+[0.244s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.275s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.275s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex_mav/src/MAV/include
+[0.276s] -- Configured cppcheck exclude dirs and/or files: 
+[0.276s] -- Added test 'lint_cmake' to check CMake code style
+[0.276s] -- Added test 'uncrustify' to check C / C++ code style
+[0.276s] -- Configured uncrustify additional arguments: 
+[0.276s] -- Added test 'xmllint' to check XML markup files
+[0.277s] -- Configuring done
+[0.285s] -- Generating done
+[0.288s] -- Build files have been written to: /home/lee/workspace/ros2_ex_mav/build/mav
+[0.293s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/mav' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex_mav/src/MAV -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex_mav/install/mav
+[0.294s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/mav': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/mav -- -j32 -l32
+[0.314s] [35m[1mConsolidate compiler generated dependencies of target mav1[0m
+[0.316s] [35m[1mConsolidate compiler generated dependencies of target mav2[0m
+[0.316s] [35m[1mConsolidate compiler generated dependencies of target mav3[0m
+[0.317s] [35m[1mConsolidate compiler generated dependencies of target mav4[0m
+[0.325s] [ 25%] Built target mav1
+[0.326s] [ 50%] Built target mav2
+[0.326s] [ 75%] Built target mav3
+[0.327s] [100%] Built target mav4
+[0.333s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/mav' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/mav -- -j32 -l32
+[0.333s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/mav': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/mav
+[0.337s] -- Install configuration: "RelWithDebInfo"
+[0.338s] -- Execute custom install script
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/lib/mav/mav1
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/lib/mav/mav2
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/lib/mav/mav3
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/lib/mav/mav4
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/launch/mav_launch.xml
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/ament_index/resource_index/package_run_dependencies/mav
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/ament_index/resource_index/parent_prefix_path/mav
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/environment/ament_prefix_path.sh
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/environment/ament_prefix_path.dsv
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/environment/path.sh
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/environment/path.dsv
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/local_setup.bash
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/local_setup.sh
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/local_setup.zsh
+[0.338s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/local_setup.dsv
+[0.339s] -- Symlinking: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.dsv
+[0.343s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/ament_index/resource_index/packages/mav
+[0.343s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/cmake/mavConfig.cmake
+[0.343s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/cmake/mavConfig-version.cmake
+[0.343s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.xml
+[0.344s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/mav' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/mav

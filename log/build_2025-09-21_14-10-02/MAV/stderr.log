@@ -1,0 +1,27 @@
+WARNING: Package name "MAV" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav1.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+    9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mav1.dir/build.make:76: CMakeFiles/mav1.dir/node/mav1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mav1.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav3.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+    9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mav3.dir/build.make:76: CMakeFiles/mav3.dir/node/mav3.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/mav3.dir/all] Error 2
+[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav2.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+    9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mav2.dir/build.make:76: CMakeFiles/mav2.dir/node/mav2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/mav2.dir/all] Error 2
+[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav4.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+    9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mav4.dir/build.make:76: CMakeFiles/mav4.dir/node/mav4.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mav4.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

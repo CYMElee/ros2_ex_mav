@@ -1,0 +1,81 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/MAV': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex_mav/src/MAV -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex_mav/install/MAV
+[0.039s] -- The C compiler identification is GNU 11.4.0
+[0.068s] -- The CXX compiler identification is GNU 11.4.0
+[0.071s] -- Detecting C compiler ABI info
+[0.108s] -- Detecting C compiler ABI info - done
+[0.112s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.112s] -- Detecting C compile features
+[0.112s] -- Detecting C compile features - done
+[0.113s] -- Detecting CXX compiler ABI info
+[0.155s] -- Detecting CXX compiler ABI info - done
+[0.158s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.158s] -- Detecting CXX compile features
+[0.159s] -- Detecting CXX compile features - done
+[0.160s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.333s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.376s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.395s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.398s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.402s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.434s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.435s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.485s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.504s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.530s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.534s] -- Looking for pthread.h
+[0.571s] -- Looking for pthread.h - found
+[0.571s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.610s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.611s] -- Found Threads: TRUE  
+[0.634s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.640s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.647s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.652s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.691s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/cmake)
+[0.699s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.725s] WARNING: Package name "MAV" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.736s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.736s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex_mav/src/MAV/include
+[0.736s] -- Configured cppcheck exclude dirs and/or files: 
+[0.736s] -- Added test 'lint_cmake' to check CMake code style
+[0.737s] -- Added test 'uncrustify' to check C / C++ code style
+[0.737s] -- Configured uncrustify additional arguments: 
+[0.737s] -- Added test 'xmllint' to check XML markup files
+[0.737s] -- Configuring done
+[0.745s] -- Generating done
+[0.748s] -- Build files have been written to: /home/lee/workspace/ros2_ex_mav/build/MAV
+[0.754s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/MAV' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex_mav/src/MAV -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex_mav/install/MAV
+[0.755s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/MAV': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/MAV -- -j32 -l32
+[0.783s] [ 12%] [32mBuilding CXX object CMakeFiles/mav1.dir/node/mav1.cpp.o[0m
+[0.783s] [ 25%] [32mBuilding CXX object CMakeFiles/mav3.dir/node/mav3.cpp.o[0m
+[0.784s] [ 37%] [32mBuilding CXX object CMakeFiles/mav4.dir/node/mav4.cpp.o[0m
+[0.785s] [ 50%] [32mBuilding CXX object CMakeFiles/mav2.dir/node/mav2.cpp.o[0m
+[0.873s] [01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav1.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+[0.873s]     9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+[0.873s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.874s] compilation terminated.
+[0.875s] gmake[2]: *** [CMakeFiles/mav1.dir/build.make:76: CMakeFiles/mav1.dir/node/mav1.cpp.o] Error 1
+[0.875s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mav1.dir/all] Error 2
+[0.875s] gmake[1]: *** Waiting for unfinished jobs....
+[0.876s] [01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav3.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+[0.876s]     9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+[0.876s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.876s] compilation terminated.
+[0.877s] gmake[2]: *** [CMakeFiles/mav3.dir/build.make:76: CMakeFiles/mav3.dir/node/mav3.cpp.o] Error 1
+[0.877s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/mav3.dir/all] Error 2
+[0.879s] [01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav2.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+[0.879s]     9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+[0.879s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.879s] compilation terminated.
+[0.880s] gmake[2]: *** [CMakeFiles/mav2.dir/build.make:76: CMakeFiles/mav2.dir/node/mav2.cpp.o] Error 1
+[0.880s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/mav2.dir/all] Error 2
+[0.881s] [01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav4.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/srv/vehicle_command.hpp: No such file or directory
+[0.881s]     9 | #include [01;31m[K<px4_msgs/srv/vehicle_command.hpp>[m[K
+[0.881s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.881s] compilation terminated.
+[0.883s] gmake[2]: *** [CMakeFiles/mav4.dir/build.make:76: CMakeFiles/mav4.dir/node/mav4.cpp.o] Error 1
+[0.883s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mav4.dir/all] Error 2
+[0.883s] gmake: *** [Makefile:146: all] Error 2
+[0.885s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/MAV' returned '2': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/MAV -- -j32 -l32
