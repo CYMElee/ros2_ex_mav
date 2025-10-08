@@ -85,6 +85,8 @@ private:
 
     void initialize() {
         T_cmd_.data.resize(3);
+        Eul_cmd_.data.resize(3);
+        platform_pose_.data.resize(4);
         T_PREARM_.q_d[0] = 0.7071; // w
         T_PREARM_.q_d[1] = 0; // x
         T_PREARM_.q_d[2] = 0; // y
@@ -92,7 +94,6 @@ private:
         T_PREARM_.thrust_body[0] = 0.0;
         T_PREARM_.thrust_body[1] = 0.0;
         T_PREARM_.thrust_body[2] = -0.1; // Negative for upward thrust
-        Eul_cmd_.data.resize(3);
         T_pub_->publish(T_PREARM_);
      
         Change_Mode_Trigger_.data = MAV_mod::IDLE;
