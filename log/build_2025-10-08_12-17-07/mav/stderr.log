@@ -1,8 +1,0 @@
-[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav3.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
-[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav3.cpp:136:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-  136 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
-      |               [01;35m[K^~~~~~[m[K
-[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav1.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
-[01m[K/home/lee/workspace/ros2_ex_mav/src/MAV/node/mav1.cpp:141:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-  141 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
-      |               [01;35m[K^~~~~~[m[K

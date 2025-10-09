@@ -1,1 +1,0 @@
-/home/lee/workspace/ros2_ex_mav/src/px4_msgs/msg/EstimatorAidSource2d.msg

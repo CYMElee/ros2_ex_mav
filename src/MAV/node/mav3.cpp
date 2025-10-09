@@ -180,7 +180,7 @@ private:
         T_.thrust_body[0] = 0.0;
         T_.thrust_body[1] = 0.0;
         //T_.thrust_body[2] = -thrust; // Negative for upward thrust
-        T_.thrust_body[2] = -0.4;
+        T_.thrust_body[2] = -thrust;
         T_.timestamp = this->get_clock()->now().nanoseconds() / 1000;
         T_pub_->publish(T_);
 
