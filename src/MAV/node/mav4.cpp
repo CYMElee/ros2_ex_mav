@@ -1,6 +1,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <std_msgs/msg/int16.hpp>
+#include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
 #include <px4_msgs/msg/offboard_control_mode.hpp>
@@ -42,6 +43,8 @@ public:
             "/MAV4/fmu/in/offboard_control_mode", qos_pub);
         vehicle_command_publisher_ = this->create_publisher<px4_msgs::msg::VehicleCommand>(
             "/MAV4/fmu/in/vehicle_command", qos_pub);
+        takeoff_command_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
+            "/MAV4/takeoff_command_received", qos_pub); 
 
         // Subscribers
         platform_pose_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
@@ -70,6 +73,7 @@ private:
     std_msgs::msg::Float64MultiArray T_cmd_;
     std_msgs::msg::Float32MultiArray Eul_cmd_;
     std_msgs::msg::Int16 Change_Mode_Trigger_;
+    std_msgs::msg::Bool takeoff_msg;
     px4_msgs::msg::VehicleAttitudeSetpoint T_;
     px4_msgs::msg::VehicleAttitudeSetpoint T_PREARM_;
 
@@ -80,7 +84,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr T_pub_debug_;
     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher_;
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher_;
-
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_command_publisher_; 
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr platform_pose_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr mav_pose_sub_;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr T_sub_;
@@ -243,9 +247,13 @@ private:
     void timer2_callback() {
         if (offboard_setpoint_counter_ == 12) {
             if (Change_Mode_Trigger_.data == MAV_mod::IDLE) {
+                takeoff_msg.data = false;
+                takeoff_command_publisher_->publish(takeoff_msg);
                 initialize();
             }
             if (Change_Mode_Trigger_.data == MAV_mod::TAKEOFF) {
+                takeoff_msg.data = true;
+                takeoff_command_publisher_->publish(takeoff_msg);
                 T_cmd_calculate();
             }
         }

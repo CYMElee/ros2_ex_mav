@@ -1,15 +1,15 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <std_msgs/msg/int16.hpp>
+#include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
-#include <std_msgs/msg/bool.hpp> // 新增 Bool 訊息
 #include <px4_msgs/msg/offboard_control_mode.hpp>
 #include <px4_msgs/msg/vehicle_attitude_setpoint.hpp>
-#include <px4_msgs/msg/vehicle_attitude.hpp>
+#include "px4_msgs/msg/vehicle_attitude.hpp"
 #include <px4_msgs/msg/vehicle_command.hpp>
-#include <tf2/LinearMath/Quaternion.h>
-#include <tf2/LinearMath/Matrix3x3.h>
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Matrix3x3.h"
 #include <Eigen/Dense>
 #include <string>
 #include <cmath>
@@ -18,11 +18,11 @@
 #include <message_filters/sync_policies/approximate_time.h>
 
 enum MAV_mod {
-    DISARM = 1, // 1
-    IDLE,       // 2
-    TAKEOFF,    // 3
-    LAND,       // 4
-    SET_HOME    // 5
+    DISARM, //1
+    IDLE, // 2
+    TAKEOFF, // 3
+    LAND, // 4
+    SET_HOME, // 5
 };
 
 class MAVControl_Node : public rclcpp::Node {
@@ -34,38 +34,36 @@ public:
         rmw_qos_profile_t qos_profile_sub = rmw_qos_profile_sensor_data;
         qos_profile_sub.reliability = RMW_QOS_POLICY_RELIABILITY_RELIABLE;
         auto qos_sub = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile_sub.history, 5), qos_profile_sub);
-
         // Publishers
         T_pub_ = this->create_publisher<px4_msgs::msg::VehicleAttitudeSetpoint>(
-            "/MAV2/fmu/in/vehicle_attitude_setpoint", qos_pub);
+            "/MAV4/fmu/in/vehicle_attitude_setpoint", qos_pub);
         T_pub_debug_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(
-            "/MAV2/fmu/in/vehicle_attitude_setpoint_euler", qos_pub);
+            "/MAV4/fmu/in/vehicle_attitude_setpoint_euler", qos_pub);
         offboard_control_mode_publisher_ = this->create_publisher<px4_msgs::msg::OffboardControlMode>(
-            "/MAV2/fmu/in/offboard_control_mode", qos_pub);
+            "/MAV4/fmu/in/offboard_control_mode", qos_pub);
         vehicle_command_publisher_ = this->create_publisher<px4_msgs::msg::VehicleCommand>(
-            "/MAV2/fmu/in/vehicle_command", qos_pub);
+            "/MAV4/fmu/in/vehicle_command", qos_pub);
         takeoff_command_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
-            "/MAV2/takeoff_command_received", qos_pub); // 新增發布者
+            "/MAV4/takeoff_command_received", qos_pub); 
 
         // Subscribers
         platform_pose_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
             "/platform/measure_attitude", qos_pub,
             std::bind(&MAVControl_Node::platform_pose_cb, this, std::placeholders::_1));
         mav_pose_sub_ = this->create_subscription<px4_msgs::msg::VehicleAttitude>(
-            "/MAV2/fmu/out/vehicle_attitude", qos_pub,
+            "/MAV4/fmu/out/vehicle_attitude", qos_pub,
             std::bind(&MAVControl_Node::mav_pose, this, std::placeholders::_1));
         T_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-            "/MAV2/cmd", qos_sub,
+            "/MAV4/cmd", qos_sub,
             std::bind(&MAVControl_Node::T_sub, this, std::placeholders::_1));
         takeoff_signal_sub_ = this->create_subscription<std_msgs::msg::Int16>(
             "/ground_station/set_mode", qos_pub,
             std::bind(&MAVControl_Node::mode_cb, this, std::placeholders::_1));
-
         offboard_setpoint_counter_ = 0;
         Change_Mode_Trigger_.data = MAV_mod::IDLE;
-
-        timer2_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&MAVControl_Node::timer2_callback, this));
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&MAVControl_Node::timer_callback, this));
+        
+        timer2_ = this->create_wall_timer(std::chrono::milliseconds(10),std::bind(&MAVControl_Node::timer2_callback, this));
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MAVControl_Node::timer_callback, this));
     }
 
 private:
@@ -75,8 +73,10 @@ private:
     std_msgs::msg::Float64MultiArray T_cmd_;
     std_msgs::msg::Float32MultiArray Eul_cmd_;
     std_msgs::msg::Int16 Change_Mode_Trigger_;
+    std_msgs::msg::Bool takeoff_msg;
     px4_msgs::msg::VehicleAttitudeSetpoint T_;
     px4_msgs::msg::VehicleAttitudeSetpoint T_PREARM_;
+
     uint64_t offboard_setpoint_counter_;
 
     rclcpp::TimerBase::SharedPtr timer_, timer2_;
@@ -84,8 +84,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr T_pub_debug_;
     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher_;
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher_;
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_command_publisher_; // 新增發布者
-
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_command_publisher_; 
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr platform_pose_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr mav_pose_sub_;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr T_sub_;
@@ -95,16 +94,15 @@ private:
         T_cmd_.data.resize(3);
         Eul_cmd_.data.resize(3);
         platform_pose_.data.resize(4);
-
-        T_PREARM_.q_d[0] = 1; // w
+        T_PREARM_.q_d[0] = 0.7071; // w
         T_PREARM_.q_d[1] = 0; // x
         T_PREARM_.q_d[2] = 0; // y
-        T_PREARM_.q_d[3] = 0; // z
+        T_PREARM_.q_d[3] = 0.7071; // z
         T_PREARM_.thrust_body[0] = 0.0;
         T_PREARM_.thrust_body[1] = 0.0;
         T_PREARM_.thrust_body[2] = -0.1; // Negative for upward thrust
-
         T_pub_->publish(T_PREARM_);
+     
         Change_Mode_Trigger_.data = MAV_mod::IDLE;
     }
 
@@ -116,14 +114,19 @@ private:
         platform_pose_ = *msg;
     }
 
+
+
     void mav_pose(const px4_msgs::msg::VehicleAttitude::SharedPtr msg) {
+        // Store original frd quaternion
         Eigen::Quaterniond q_frd(msg->q[0], msg->q[1], msg->q[2], msg->q[3]);
+       
+
         Eigen::Quaterniond q_nwu;
         q_nwu.w() = q_frd.w();
         q_nwu.x() = q_frd.x();
         q_nwu.y() = -q_frd.y();
         q_nwu.z() = -q_frd.z();
-
+    
         mav_pose_.q[0] = q_nwu.w();
         mav_pose_.q[1] = q_nwu.x();
         mav_pose_.q[2] = q_nwu.y();
@@ -135,16 +138,23 @@ private:
     }
 
     void T_cmd_calculate() {
-        double alpha = T_cmd_.data[1];
-        double beta = T_cmd_.data[2];
-        double thrust = T_cmd_.data[0];
+
+       double alpha = T_cmd_.data[1];
+       double beta = T_cmd_.data[2];
+       double thrust = T_cmd_.data[0];
+
+       // For testing ,the alpha beta we set as user input
+
+
+        
+       
 
         Eigen::Quaterniond MAV_pose_cmd;
         MAV_pose_cmd = Eigen::AngleAxisd(0, Eigen::Vector3d::UnitZ()) *
                        Eigen::AngleAxisd(beta, Eigen::Vector3d::UnitY()) *
                        Eigen::AngleAxisd(alpha, Eigen::Vector3d::UnitX());
-        MAV_pose_cmd.normalize();
-        Eigen::Matrix3d rotationMatrix_mav_des_i2b = MAV_pose_cmd.toRotationMatrix();
+        MAV_pose_cmd.normalize(); // Ensure normalization
+        Eigen::Matrix3d rotationMatrix_mav_des_i2b = MAV_pose_cmd.toRotationMatrix(); // R_i2B desire
 
         Eigen::Quaterniond quaternion_platform(
             platform_pose_.data[0],
@@ -152,19 +162,24 @@ private:
             platform_pose_.data[2],
             platform_pose_.data[3]);
         quaternion_platform.normalize();
-        Eigen::Matrix3d rotationMatrix_platform = quaternion_platform.toRotationMatrix();
+        Eigen::Matrix3d rotationMatrix_platform = quaternion_platform.toRotationMatrix(); // R_B2W 
 
         Eigen::Matrix3d rotationMatrix_mav_des_i2w = rotationMatrix_platform * rotationMatrix_mav_des_i2b;
         Eigen::Vector3d eulerAngles_mav_des = rotationMatrix_mav_des_i2w.eulerAngles(2, 1, 0);
 
         Eigen::Quaterniond mav_pose_desire(rotationMatrix_mav_des_i2w);
-        mav_pose_desire.normalize();
+      
+        mav_pose_desire.normalize(); 
+
 
         Eigen::Quaterniond mav_pose_desire_ned;
-        mav_pose_desire_ned.w() = mav_pose_desire.w();
+
+        mav_pose_desire_ned.w() = mav_pose_desire.w(); // trans the fram from nwu to ned
         mav_pose_desire_ned.x() = mav_pose_desire.x();
         mav_pose_desire_ned.y() = -mav_pose_desire.y();
         mav_pose_desire_ned.z() = -mav_pose_desire.z();
+
+
 
         T_.q_d[0] = mav_pose_desire_ned.w();
         T_.q_d[1] = mav_pose_desire_ned.x();
@@ -172,10 +187,11 @@ private:
         T_.q_d[3] = mav_pose_desire_ned.z();
         T_.thrust_body[0] = 0.0;
         T_.thrust_body[1] = 0.0;
-        T_.thrust_body[2] = -thrust;
+        T_.thrust_body[2] = -thrust; // Negative for upward thrust
         T_.timestamp = this->get_clock()->now().nanoseconds() / 1000;
         T_pub_->publish(T_);
 
+        //the  eulerAngles_mav_des is use to debug
         Eul_cmd_.data[0] = eulerAngles_mav_des(0);
         Eul_cmd_.data[1] = eulerAngles_mav_des(1);
         Eul_cmd_.data[2] = eulerAngles_mav_des(2);
@@ -187,7 +203,7 @@ private:
         msg.param1 = param1;
         msg.param2 = param2;
         msg.command = command;
-        msg.target_system = 1;
+        msg.target_system = 4;
         msg.target_component = 1;
         msg.source_system = 1;
         msg.source_component = 1;
@@ -214,12 +230,15 @@ private:
 
     void timer_callback() {
         if (offboard_setpoint_counter_ == 10) {
+            // Change to Offboard mode after 10 setpoints
             this->publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
+            // Arm the vehicle
             this->arm();
             offboard_setpoint_counter_ = 12;
         }
 
         publish_offboard_control_mode();
+        // stop the counter after reaching 11
         if (offboard_setpoint_counter_ < 11) {
             offboard_setpoint_counter_++;
         }
@@ -228,20 +247,14 @@ private:
     void timer2_callback() {
         if (offboard_setpoint_counter_ == 12) {
             if (Change_Mode_Trigger_.data == MAV_mod::IDLE) {
+                takeoff_msg.data = false;
+                takeoff_command_publisher_->publish(takeoff_msg);
                 initialize();
             }
             if (Change_Mode_Trigger_.data == MAV_mod::TAKEOFF) {
-                // 發布起飛指令收到狀態
-                std_msgs::msg::Bool takeoff_msg;
                 takeoff_msg.data = true;
                 takeoff_command_publisher_->publish(takeoff_msg);
-
                 T_cmd_calculate();
-            } else {
-                // 可選：非起飛模式時發布 false
-                std_msgs::msg::Bool takeoff_msg;
-                takeoff_msg.data = false;
-                takeoff_command_publisher_->publish(takeoff_msg);
             }
         }
     }
