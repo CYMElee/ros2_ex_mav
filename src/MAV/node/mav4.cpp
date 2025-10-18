@@ -12,6 +12,9 @@
 #include <Eigen/Dense>
 #include <string>
 #include <cmath>
+#include <message_filters/subscriber.h>
+#include <message_filters/synchronizer.h>
+#include <message_filters/sync_policies/approximate_time.h>
 
 enum MAV_mod {
     DISARM, //1

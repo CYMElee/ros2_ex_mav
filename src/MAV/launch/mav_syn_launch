@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="mav" exec="mav1_syn" name="mav1_syn" output="screen"/>
+    <node pkg="mav" exec="mav2_syn" name="mav2_syn" output="screen"/>
+    <node pkg="mav" exec="mav3_syn" name="mav3_syn" output="screen"/>
+    <node pkg="mav" exec="mav4_syn" name="mav4_syn" output="screen"/>
+</launch>
