@@ -36,25 +36,25 @@ public:
         auto qos_sub = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile_sub.history, 5), qos_profile_sub);
         // Publishers
         T_pub_ = this->create_publisher<px4_msgs::msg::VehicleAttitudeSetpoint>(
-            "/MAV4/fmu/in/vehicle_attitude_setpoint", qos_pub);
+            "/MAV3/fmu/in/vehicle_attitude_setpoint", qos_pub);
         T_pub_debug_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(
-            "/MAV4/fmu/in/vehicle_attitude_setpoint_euler", qos_pub);
+            "/MAV3/fmu/in/vehicle_attitude_setpoint_euler", qos_pub);
         offboard_control_mode_publisher_ = this->create_publisher<px4_msgs::msg::OffboardControlMode>(
-            "/MAV4/fmu/in/offboard_control_mode", qos_pub);
+            "/MAV3/fmu/in/offboard_control_mode", qos_pub);
         vehicle_command_publisher_ = this->create_publisher<px4_msgs::msg::VehicleCommand>(
-            "/MAV4/fmu/in/vehicle_command", qos_pub);
+            "/MAV3/fmu/in/vehicle_command", qos_pub);
         takeoff_command_publisher_ = this->create_publisher<std_msgs::msg::Bool>(
-            "/MAV4/takeoff_command_received", qos_pub); 
+            "/MAV3/takeoff_command_received", qos_pub); 
 
         // Subscribers
         platform_pose_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
             "/platform/measure_attitude", qos_pub,
             std::bind(&MAVControl_Node::platform_pose_cb, this, std::placeholders::_1));
         mav_pose_sub_ = this->create_subscription<px4_msgs::msg::VehicleAttitude>(
-            "/MAV4/fmu/out/vehicle_attitude", qos_pub,
+            "/MAV3/fmu/out/vehicle_attitude", qos_pub,
             std::bind(&MAVControl_Node::mav_pose, this, std::placeholders::_1));
         T_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-            "/MAV4/cmd", qos_sub,
+            "/MAV3/cmd", qos_sub,
             std::bind(&MAVControl_Node::T_sub, this, std::placeholders::_1));
         takeoff_signal_sub_ = this->create_subscription<std_msgs::msg::Int16>(
             "/ground_station/set_mode", qos_pub,
