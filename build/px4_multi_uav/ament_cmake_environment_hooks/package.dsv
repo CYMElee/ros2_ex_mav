@@ -1,4 +1,0 @@
-source;share/px4_multi_uav/local_setup.bash
-source;share/px4_multi_uav/local_setup.dsv
-source;share/px4_multi_uav/local_setup.sh
-source;share/px4_multi_uav/local_setup.zsh

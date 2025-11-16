@@ -1,1 +1,0 @@
-/home/lee/workspace/ros2_ex_mav/build/mav/ament_cmake_environment_hooks/local_setup.bash

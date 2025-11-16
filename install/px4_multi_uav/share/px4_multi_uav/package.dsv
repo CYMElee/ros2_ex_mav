@@ -1,8 +1,0 @@
-source;share/px4_multi_uav/hook/cmake_prefix_path.ps1
-source;share/px4_multi_uav/hook/cmake_prefix_path.dsv
-source;share/px4_multi_uav/hook/cmake_prefix_path.sh
-source;share/px4_multi_uav/local_setup.bash
-source;share/px4_multi_uav/local_setup.dsv
-source;share/px4_multi_uav/local_setup.ps1
-source;share/px4_multi_uav/local_setup.sh
-source;share/px4_multi_uav/local_setup.zsh

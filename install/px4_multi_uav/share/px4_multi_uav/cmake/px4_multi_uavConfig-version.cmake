@@ -1,1 +1,0 @@
-/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav/ament_cmake_core/px4_multi_uavConfig-version.cmake
