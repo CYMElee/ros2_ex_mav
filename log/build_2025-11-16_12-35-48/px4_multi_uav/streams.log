@@ -1,0 +1,41 @@
+[0.000s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target mav2[0m
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target mav4[0m
+[0.001s] [ 13%] Built target leader
+[0.001s] [ 26%] Built target mav1
+[0.001s] [ 40%] Built target mav3
+[0.001s] [ 60%] Built target keyboard_node
+[0.001s] [ 66%] [32mBuilding CXX object CMakeFiles/formation.dir/node/formation.cpp.o[0m
+[0.001s] [ 80%] Built target mav2
+[0.001s] [ 93%] Built target mav4
+[9.147s] [100%] [32m[1mLinking CXX executable formation[0m
+[9.306s] [100%] Built target formation
+[9.312s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[9.313s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav
+[9.318s] -- Install configuration: "RelWithDebInfo"
+[9.318s] -- Execute custom install script
+[9.318s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/formation
+[9.318s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/keyboard_node
+[9.318s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/leader
+[9.318s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav1
+[9.318s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav2
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav3
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav4
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/formation_launch.xml
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/mav_launch.xml
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/package_run_dependencies/px4_multi_uav
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/parent_prefix_path/px4_multi_uav
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.sh
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.dsv
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.sh
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.dsv
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.bash
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.sh
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.zsh
+[9.319s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.dsv
+[9.319s] -- Symlinking: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.dsv
+[9.323s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/packages/px4_multi_uav
+[9.323s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig.cmake
+[9.323s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig-version.cmake
+[9.323s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.xml
+[9.324s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav

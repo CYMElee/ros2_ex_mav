@@ -1,3 +1,1 @@
-uint64 timestamp		# time since system start (microseconds)
-int32 return_value
-uint32 return_sequence
+/home/lee/workspace/ros2_ex_mav/src/px4_msgs/msg/QshellRetval.msg

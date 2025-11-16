@@ -1,5 +1,1 @@
-uint64 timestamp		# time since system start (microseconds)
-
-int32 val
-
-uint8[512] junk
+/home/lee/workspace/ros2_ex_mav/src/px4_msgs/msg/OrbTestLarge.msg

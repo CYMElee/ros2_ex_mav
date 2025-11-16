@@ -1,5 +1,1 @@
-uint64 timestamp			# time since system start (microseconds)
-
-float32[3] control_power
-
-# TOPICS actuator_controls_status_0 actuator_controls_status_1
+/home/lee/workspace/ros2_ex_mav/src/px4_msgs/msg/ActuatorControlsStatus.msg

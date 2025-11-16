@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-6ab96a81888c796c8503.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "px4_multi_uav",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "formation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-formation-RelWithDebInfo-d8ad51b56cc508046216.json",
+					"name" : "formation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_node-RelWithDebInfo-9d9af3462771bf72f70d.json",
+					"name" : "keyboard_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "leader::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-leader-RelWithDebInfo-fe223b2c839458b3eccd.json",
+					"name" : "leader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav1-RelWithDebInfo-0413d9202972886efdde.json",
+					"name" : "mav1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav2-RelWithDebInfo-46c095975e41524dcda6.json",
+					"name" : "mav2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav3-RelWithDebInfo-20d90a6ae9c5378f0f37.json",
+					"name" : "mav3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav4-RelWithDebInfo-78441326cf208d299c1b.json",
+					"name" : "mav4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_multi_uav_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_multi_uav_uninstall-RelWithDebInfo-8212931ec8e221b81232.json",
+					"name" : "px4_multi_uav_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-566535bae3db6165d039.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav",
+		"source" : "/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

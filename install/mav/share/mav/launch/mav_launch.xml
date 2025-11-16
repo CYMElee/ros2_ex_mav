@@ -1,7 +1,1 @@
-<?xml version="1.0"?>
-<launch>
-    <node pkg="mav" exec="mav1" name="mav1" output="screen"/>
-    <node pkg="mav" exec="mav2" name="mav2" output="screen"/>
-    <node pkg="mav" exec="mav3" name="mav3" output="screen"/>
-    <node pkg="mav" exec="mav4" name="mav4" output="screen"/>
-</launch>
+/home/lee/workspace/ros2_ex_mav/src/MAV/launch/mav_launch.xml

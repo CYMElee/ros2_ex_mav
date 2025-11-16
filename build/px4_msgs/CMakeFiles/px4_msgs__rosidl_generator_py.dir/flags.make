@@ -6,5 +6,5 @@ C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"px4_msgs\" -Dp
 
 C_INCLUDES = -I/home/lee/workspace/ros2_ex_mav/build/px4_msgs/rosidl_generator_c -I/home/lee/workspace/ros2_ex_mav/build/px4_msgs/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
-C_FLAGS = -fPIC -Wall -Wextra
+C_FLAGS = -O2 -g -DNDEBUG -fPIC -Wall -Wextra
 

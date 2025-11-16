@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="px4_multi_uav" exec="formation" name="formation" output="screen"/>
+    <node pkg="px4_multi_uav" exec="leader" name="leader"/>
+</launch>
