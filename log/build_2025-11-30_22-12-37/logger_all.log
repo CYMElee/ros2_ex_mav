@@ -1,0 +1,332 @@
+[0.046s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--event-handlers', 'console_cohesion+', '--base-paths', '/home/lee/workspace/ros2_ex_mav', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo']
+[0.046s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=['console_cohesion+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/lee/workspace/ros2_ex_mav'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7db81fc8c400>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7db81fc53df0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7db81fc53df0>>, mixin_verb=('build',))
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.062s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lee/workspace/ros2_ex_mav'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['ignore', 'ignore_ament_install']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'ignore'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'ignore_ament_install'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['colcon_pkg']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'colcon_pkg'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['colcon_meta']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'colcon_meta'
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['ros']
+[0.062s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'ros'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['cmake', 'python']
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'cmake'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'python'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extensions ['python_setup_py']
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav) by extension 'python_setup_py'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/build) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/build) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/build) ignored
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/install) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/install) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/install) ignored
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/log) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/log) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/log) ignored
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'ignore_ament_install'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extensions ['colcon_pkg']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'colcon_pkg'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extensions ['colcon_meta']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'colcon_meta'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extensions ['ros']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'ros'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extensions ['cmake', 'python']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'cmake'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'python'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extensions ['python_setup_py']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_30_07) by extension 'python_setup_py'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'ignore_ament_install'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extensions ['colcon_pkg']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'colcon_pkg'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extensions ['colcon_meta']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'colcon_meta'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extensions ['ros']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'ros'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extensions ['cmake', 'python']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'cmake'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'python'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extensions ['python_setup_py']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_36_17) by extension 'python_setup_py'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'ignore_ament_install'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extensions ['colcon_pkg']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'colcon_pkg'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extensions ['colcon_meta']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'colcon_meta'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extensions ['ros']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'ros'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extensions ['cmake', 'python']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'cmake'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'python'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extensions ['python_setup_py']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_43_21) by extension 'python_setup_py'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extensions ['ignore', 'ignore_ament_install']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'ignore'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'ignore_ament_install'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extensions ['colcon_pkg']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'colcon_pkg'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extensions ['colcon_meta']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'colcon_meta'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extensions ['ros']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'ros'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extensions ['cmake', 'python']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'cmake'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'python'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extensions ['python_setup_py']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_49_43) by extension 'python_setup_py'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extensions ['ignore', 'ignore_ament_install']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'ignore'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'ignore_ament_install'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extensions ['colcon_pkg']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'colcon_pkg'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extensions ['colcon_meta']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'colcon_meta'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extensions ['ros']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'ros'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extensions ['cmake', 'python']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'cmake'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'python'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extensions ['python_setup_py']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/rosbag2_2025_11_24-20_56_33) by extension 'python_setup_py'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['ignore', 'ignore_ament_install']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'ignore'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'ignore_ament_install'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['colcon_pkg']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'colcon_pkg'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['colcon_meta']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'colcon_meta'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['ros']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'ros'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['cmake', 'python']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'cmake'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'python'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extensions ['python_setup_py']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src) by extension 'python_setup_py'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['ignore', 'ignore_ament_install']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'ignore'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'ignore_ament_install'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['colcon_pkg']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'colcon_pkg'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['colcon_meta']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'colcon_meta'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extensions ['ros']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/MAV) by extension 'ros'
+[0.072s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex_mav/src/MAV' with type 'ros.ament_cmake' and name 'mav'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'ignore'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'ignore_ament_install'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['colcon_pkg']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'colcon_pkg'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['colcon_meta']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'colcon_meta'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extensions ['ros']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_msgs) by extension 'ros'
+[0.072s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex_mav/src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extensions ['ignore', 'ignore_ament_install']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extension 'ignore'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extension 'ignore_ament_install'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extensions ['colcon_pkg']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extension 'colcon_pkg'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extensions ['colcon_meta']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extension 'colcon_meta'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extensions ['ros']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav) by extension 'ros'
+[0.073s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav' with type 'ros.ament_cmake' and name 'px4_multi_uav'
+[0.073s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.081s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.081s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.082s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/lee/workspace/ros2_ex_mav/install
+[0.082s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/lee/workspace/ros2_ex/install
+[0.083s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 320 installed packages in /opt/ros/humble
+[0.083s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.099s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'px4_msgs' is in: /home/lee/workspace/ros2_ex_mav/install/px4_msgs, /home/lee/workspace/ros2_ex/install/px4_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding px4_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.099s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex_mav/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex_mav/install/px4_msgs', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex_mav/src/px4_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.099s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'cmake_target' from command line to 'None'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'cmake_clean_first' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'cmake_force_configure' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'ament_cmake_args' from command line to 'None'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'mav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.100s] DEBUG:colcon.colcon_core.verb:Building package 'mav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex_mav/build/mav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex_mav/install/mav', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex_mav/src/MAV', 'symlink_install': True, 'test_result_base': None}
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'cmake_target' from command line to 'None'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'cmake_clean_first' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'cmake_force_configure' from command line to 'False'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'ament_cmake_args' from command line to 'None'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.100s] Level 5:colcon.colcon_core.verb:set package 'px4_multi_uav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.100s] DEBUG:colcon.colcon_core.verb:Building package 'px4_multi_uav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav', 'symlink_install': True, 'test_result_base': None}
+[0.100s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.100s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex_mav/src/px4_msgs' with build type 'ament_cmake'
+[0.101s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex_mav/src/px4_msgs'
+[0.101s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.101s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.102s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_msgs -- -j32 -l32
+[0.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_msgs -- -j32 -l32
+[0.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_msgs
+[0.622s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[0.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_msgs
+[0.624s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs' for CMake module files
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs' for CMake config files
+[0.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib'
+[0.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[0.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[0.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[0.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/bin'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib/python3.10/site-packages'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/bin'
+[0.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.ps1'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.dsv'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.sh'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.bash'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.zsh'
+[0.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[0.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs' for CMake module files
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs' for CMake config files
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib'
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[0.635s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/bin'
+[0.635s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[0.635s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib/python3.10/site-packages'
+[0.635s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/bin'
+[0.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.ps1'
+[0.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.sh'
+[0.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.bash'
+[0.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/package.zsh'
+[0.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[0.636s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex_mav/src/MAV' with build type 'ament_cmake'
+[0.636s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex_mav/src/MAV'
+[0.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.636s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.638s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav' with build type 'ament_cmake'
+[0.638s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav'
+[0.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.698s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mav)
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav' for CMake module files
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav' for CMake config files
+[0.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('mav', 'cmake_prefix_path')
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/hook/cmake_prefix_path.ps1'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/hook/cmake_prefix_path.dsv'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/hook/cmake_prefix_path.sh'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/lib'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/bin'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/lib/pkgconfig/mav.pc'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/lib/python3.10/site-packages'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/bin'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.ps1'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.dsv'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.sh'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.bash'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.zsh'
+[0.700s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex_mav/install/mav/share/colcon-core/packages/mav)
+[0.701s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mav)
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav' for CMake module files
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav' for CMake config files
+[0.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('mav', 'cmake_prefix_path')
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/hook/cmake_prefix_path.ps1'
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/hook/cmake_prefix_path.dsv'
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/hook/cmake_prefix_path.sh'
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/lib'
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/bin'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/lib/pkgconfig/mav.pc'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/lib/python3.10/site-packages'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/mav/bin'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.ps1'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.dsv'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.sh'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.bash'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/mav/share/mav/package.zsh'
+[0.703s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex_mav/install/mav/share/colcon-core/packages/mav)
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex_mav/build/mav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/mav -- -j32 -l32
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[0.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex_mav/build/mav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/mav -- -j32 -l32
+[0.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex_mav/build/mav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/mav
+[0.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex_mav/build/mav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/mav
+[7.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[7.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_multi_uav)
+[7.496s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav' for CMake module files
+[7.497s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav' for CMake config files
+[7.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_multi_uav', 'cmake_prefix_path')
+[7.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/hook/cmake_prefix_path.ps1'
+[7.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/hook/cmake_prefix_path.dsv'
+[7.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/hook/cmake_prefix_path.sh'
+[7.497s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib'
+[7.497s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/bin'
+[7.497s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/pkgconfig/px4_multi_uav.pc'
+[7.498s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/python3.10/site-packages'
+[7.498s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/bin'
+[7.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.ps1'
+[7.498s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.dsv'
+[7.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.sh'
+[7.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.bash'
+[7.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.zsh'
+[7.498s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/colcon-core/packages/px4_multi_uav)
+[7.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.509s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.512s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.512s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.512s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.519s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.520s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex_mav/install/local_setup.ps1'
+[7.520s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/workspace/ros2_ex_mav/install/_local_setup_util_ps1.py'
+[7.520s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex_mav/install/setup.ps1'
+[7.521s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex_mav/install/local_setup.sh'
+[7.521s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/workspace/ros2_ex_mav/install/_local_setup_util_sh.py'
+[7.521s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex_mav/install/setup.sh'
+[7.522s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex_mav/install/local_setup.bash'
+[7.522s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex_mav/install/setup.bash'
+[7.522s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex_mav/install/local_setup.zsh'
+[7.523s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex_mav/install/setup.zsh'

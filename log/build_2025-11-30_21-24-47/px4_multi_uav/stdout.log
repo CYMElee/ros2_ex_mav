@@ -1,0 +1,7 @@
+[ 13%] Built target mav1
+[ 20%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[ 33%] Built target mav3
+[ 46%] Built target formation
+[ 60%] Built target mav2
+[ 80%] Built target keyboard_node
+[ 93%] Built target mav4

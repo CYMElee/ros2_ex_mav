@@ -1,0 +1,68 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav
+[35m[1mConsolidate compiler generated dependencies of target mav1[0m
+[35m[1mConsolidate compiler generated dependencies of target leader[0m
+[35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[35m[1mConsolidate compiler generated dependencies of target formation[0m
+[35m[1mConsolidate compiler generated dependencies of target mav2[0m
+[35m[1mConsolidate compiler generated dependencies of target mav3[0m
+[35m[1mConsolidate compiler generated dependencies of target mav4[0m
+[ 13%] Built target mav1
+[ 26%] Built target formation
+[ 40%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[ 53%] Built target keyboard_node
+[ 66%] Built target mav3
+[ 80%] Built target mav2
+[ 93%] Built target mav4
+[100%] [32m[1mLinking CXX executable leader[0m
+[100%] Built target leader
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/formation
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/keyboard_node
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/leader
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav1
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav2
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav3
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav4
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/formation_launch.xml
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/mav_launch.xml
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/package_run_dependencies/px4_multi_uav
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/parent_prefix_path/px4_multi_uav
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.bash
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.zsh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.dsv
+-- Symlinking: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/packages/px4_multi_uav
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig.cmake
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig-version.cmake
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.xml

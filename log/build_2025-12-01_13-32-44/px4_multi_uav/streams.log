@@ -1,0 +1,42 @@
+[0.007s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target formation[0m
+[0.040s] [ 13%] Built target mav4
+[0.040s] [ 20%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[0.041s] [ 33%] Built target mav3
+[0.043s] [ 46%] Built target mav1
+[0.043s] [ 60%] Built target mav2
+[0.043s] [ 86%] [32mBuilding CXX object CMakeFiles/formation.dir/node/formation.cpp.o[0m
+[0.043s] [ 86%] Built target keyboard_node
+[6.842s] [ 93%] [32m[1mLinking CXX executable leader[0m
+[6.966s] [ 93%] Built target leader
+[9.496s] [100%] [32m[1mLinking CXX executable formation[0m
+[9.660s] [100%] Built target formation
+[9.667s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[9.668s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav
+[9.673s] -- Install configuration: "RelWithDebInfo"
+[9.673s] -- Execute custom install script
+[9.673s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/formation
+[9.673s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/keyboard_node
+[9.673s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/leader
+[9.673s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav1
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav2
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav3
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav4
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/formation_launch.xml
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/mav_launch.xml
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/package_run_dependencies/px4_multi_uav
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/parent_prefix_path/px4_multi_uav
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.sh
+[9.674s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.dsv
+[9.675s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.sh
+[9.675s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.dsv
+[9.675s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.bash
+[9.675s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.sh
+[9.675s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.zsh
+[9.675s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.dsv
+[9.675s] -- Symlinking: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.dsv
+[9.681s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/packages/px4_multi_uav
+[9.681s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig.cmake
+[9.681s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig-version.cmake
+[9.681s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.xml
+[9.683s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav

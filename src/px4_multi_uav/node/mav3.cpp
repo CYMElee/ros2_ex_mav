@@ -59,7 +59,7 @@ public:
         // ---------- Timers ----------
         timer_  = this->create_wall_timer(std::chrono::milliseconds(100),  // 10 Hz handshake
                                           std::bind(&MAVControl_Node::timer_callback, this));
-        timer2_ = this->create_wall_timer(std::chrono::milliseconds(20),   // 50 Hz setpoint
+        timer2_ = this->create_wall_timer(std::chrono::milliseconds(10),   // 50 Hz setpoint
                                           std::bind(&MAVControl_Node::timer2_callback, this));
     }
 
@@ -157,8 +157,8 @@ private:
 
 
         // Velocity: 直接使用接收到的 NED 速度
-        msg.velocity[0] = 0;
-        msg.velocity[1] = 0;
+        msg.velocity[0] = velocity_cmd_[0];
+        msg.velocity[1] = velocity_cmd_[1];
         msg.velocity[2] = velocity_cmd_[2];
 
         // Acceleration: NaN

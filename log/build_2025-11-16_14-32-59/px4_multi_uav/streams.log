@@ -1,0 +1,120 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex_mav/src/px4_multi_uav -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav
+[0.038s] -- The C compiler identification is GNU 11.4.0
+[0.072s] -- The CXX compiler identification is GNU 11.4.0
+[0.076s] -- Detecting C compiler ABI info
+[0.118s] -- Detecting C compiler ABI info - done
+[0.122s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.122s] -- Detecting C compile features
+[0.122s] -- Detecting C compile features - done
+[0.123s] -- Detecting CXX compiler ABI info
+[0.166s] -- Detecting CXX compiler ABI info - done
+[0.169s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.169s] -- Detecting CXX compile features
+[0.169s] -- Detecting CXX compile features - done
+[0.171s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.351s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.393s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.415s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.418s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.421s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.454s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.455s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.503s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.517s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.544s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.550s] -- Looking for pthread.h
+[0.591s] -- Looking for pthread.h - found
+[0.592s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.631s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.631s] -- Found Threads: TRUE  
+[0.654s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.660s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.665s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.704s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex_mav/install/px4_msgs/share/px4_msgs/cmake)
+[0.715s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.750s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.750s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/include>
+[0.750s] -- Configured cppcheck exclude dirs and/or files: 
+[0.750s] -- Added test 'lint_cmake' to check CMake code style
+[0.751s] -- Added test 'uncrustify' to check C / C++ code style
+[0.751s] -- Configured uncrustify additional arguments: 
+[0.751s] -- Added test 'xmllint' to check XML markup files
+[0.751s] -- Configuring done
+[0.763s] -- Generating done
+[0.768s] -- Build files have been written to: /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav
+[0.773s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex_mav/src/px4_multi_uav -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav
+[0.774s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[0.803s] [  6%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[0.804s] [ 13%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/src/getch.cpp.o[0m
+[0.805s] [ 20%] [32mBuilding CXX object CMakeFiles/formation.dir/node/formation.cpp.o[0m
+[0.805s] [ 26%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.805s] [ 33%] [32mBuilding CXX object CMakeFiles/mav1.dir/node/mav1.cpp.o[0m
+[0.806s] [ 40%] [32mBuilding CXX object CMakeFiles/mav3.dir/node/mav3.cpp.o[0m
+[0.806s] [ 53%] [32mBuilding CXX object CMakeFiles/mav2.dir/node/mav2.cpp.o[0m
+[0.806s] [ 53%] [32mBuilding CXX object CMakeFiles/mav4.dir/node/mav4.cpp.o[0m
+[0.815s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:[m[K In function ‘[01m[Kchar getch()[m[K’:
+[0.815s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_oflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.815s]     8 |     struct termios old = {0[01;35m[K}[m[K;
+[0.815s]       |                            [01;35m[K^[m[K
+[0.816s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_cflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.816s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_lflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.816s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_line[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.816s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_cc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.816s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_ispeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.816s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_ospeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[2.699s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/keyboard_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.699s] [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/keyboard_node.cpp:101:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kc_prev[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[2.699s]   101 |     int [01;35m[Kc_prev[m[K = EOF;
+[2.699s]       |         [01;35m[K^~~~~~[m[K
+[5.042s] [ 60%] [32m[1mLinking CXX executable leader[0m
+[5.353s] [ 60%] Built target leader
+[6.799s] [ 66%] [32m[1mLinking CXX executable mav1[0m
+[7.156s] [ 66%] Built target mav1
+[7.508s] [ 73%] [32m[1mLinking CXX executable mav2[0m
+[7.513s] [ 80%] [32m[1mLinking CXX executable keyboard_node[0m
+[7.714s] [ 80%] Built target keyboard_node
+[7.758s] [ 86%] [32m[1mLinking CXX executable mav3[0m
+[7.890s] [ 86%] Built target mav2
+[8.099s] [ 86%] Built target mav3
+[8.732s] [ 93%] [32m[1mLinking CXX executable formation[0m
+[9.141s] [ 93%] Built target formation
+[9.868s] [100%] [32m[1mLinking CXX executable mav4[0m
+[10.156s] [100%] Built target mav4
+[10.162s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav -- -j32 -l32
+[10.163s] Invoking command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav
+[10.168s] -- Install configuration: ""
+[10.168s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/formation
+[10.170s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/formation" to ""
+[10.170s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/keyboard_node
+[10.171s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/keyboard_node" to ""
+[10.172s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/leader
+[10.173s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/leader" to ""
+[10.173s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav1
+[10.175s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav1" to ""
+[10.175s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav2
+[10.177s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav2" to ""
+[10.177s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav3
+[10.179s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav3" to ""
+[10.179s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav4
+[10.181s] -- Set runtime path of "/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/lib/px4_multi_uav/mav4" to ""
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/mav_launch.xml
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/launch/formation_launch.xml
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/package_run_dependencies/px4_multi_uav
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/parent_prefix_path/px4_multi_uav
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.sh
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/ament_prefix_path.dsv
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.sh
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/environment/path.dsv
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.bash
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.sh
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.zsh
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/local_setup.dsv
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.dsv
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/ament_index/resource_index/packages/px4_multi_uav
+[10.181s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig.cmake
+[10.182s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/cmake/px4_multi_uavConfig-version.cmake
+[10.182s] -- Installing: /home/lee/workspace/ros2_ex_mav/install/px4_multi_uav/share/px4_multi_uav/package.xml
+[10.183s] Invoked command in '/home/lee/workspace/ros2_ex_mav/build/px4_multi_uav' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex_mav/install/px4_msgs:/home/lee/workspace/ros2_ex_mav/install/px4_multi_uav:/home/lee/workspace/ros2_ex_mav/install/mav:/home/lee/workspace/ros2_ex/install/mav:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex_mav/build/px4_multi_uav

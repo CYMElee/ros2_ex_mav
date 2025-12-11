@@ -22,7 +22,7 @@ add_executable(keyboard_node node/keyboard_node.cpp src/getch.cpp)
 ament_target_dependencies(keyboard_node rclcpp std_msgs px4_msgs)
 
 add_executable(leader node/leader.cpp )
-ament_target_dependencies(leader rclcpp std_msgs)
+ament_target_dependencies(leader rclcpp std_msgs px4_msgs)
 
 add_executable(mav1 node/mav1.cpp)
 ament_target_dependencies(mav1 rclcpp std_msgs geometry_msgs px4_msgs tf2)

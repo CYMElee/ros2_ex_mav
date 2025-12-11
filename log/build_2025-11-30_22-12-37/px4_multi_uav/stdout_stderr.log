@@ -1,0 +1,39 @@
+[35m[1mConsolidate compiler generated dependencies of target leader[0m
+[ 40%] Built target mav2
+[ 40%] Built target mav1
+[ 46%] Built target keyboard_node
+[ 60%] Built target mav3
+[ 66%] [32mBuilding CXX object CMakeFiles/formation.dir/node/formation.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[ 86%] Built target mav4
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/formation.cpp:1[m[K:
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/formation.cpp:[m[K In member function ‘[01m[Kvoid Formation_Node::formation()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/formation.cpp:161:88:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav1_vel_d[m[K’ was not declared in this scope; did you mean ‘[01m[Kmav1_vel_xd[m[K’?
+  161 |         RCLCPP_INFO(this->get_logger(), "v cmd,MAV1: %f,MAV2: %f,MAV3: %f,MAV4: %f \n",[01;31m[Kmav1_vel_d[m[K ,mav2_vel_d,mav3_vel_d,mav4_vel_d);
+      |                                                                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/formation.cpp:161:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav2_vel_d[m[K’ was not declared in this scope; did you mean ‘[01m[Kmav2_vel_xd[m[K’?
+  161 |         RCLCPP_INFO(this->get_logger(), "v cmd,MAV1: %f,MAV2: %f,MAV3: %f,MAV4: %f \n",mav1_vel_d ,[01;31m[Kmav2_vel_d[m[K,mav3_vel_d,mav4_vel_d);
+      |                                                                                                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/formation.cpp:161:111:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav3_vel_d[m[K’ was not declared in this scope; did you mean ‘[01m[Kmav3_vel_xd[m[K’?
+  161 |         RCLCPP_INFO(this->get_logger(), "v cmd,MAV1: %f,MAV2: %f,MAV3: %f,MAV4: %f \n",mav1_vel_d ,mav2_vel_d,[01;31m[Kmav3_vel_d[m[K,mav4_vel_d);
+      |                                                                                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/formation.cpp:161:122:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav4_vel_d[m[K’ was not declared in this scope; did you mean ‘[01m[Kmav4_vel_xd[m[K’?
+  161 |         RCLCPP_INFO(this->get_logger(), "v cmd,MAV1: %f,MAV2: %f,MAV3: %f,MAV4: %f \n",mav1_vel_d ,mav2_vel_d,mav3_vel_d,[01;31m[Kmav4_vel_d[m[K);
+      |                                                                                                                          [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/formation.dir/build.make:76: CMakeFiles/formation.dir/node/formation.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/formation.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 93%] [32m[1mLinking CXX executable leader[0m
+[ 93%] Built target leader
+gmake: *** [Makefile:146: all] Error 2

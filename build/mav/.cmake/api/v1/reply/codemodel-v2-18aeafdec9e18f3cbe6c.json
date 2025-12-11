@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-cf87d7271b3aae821fec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mav",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mav1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav1-RelWithDebInfo-b198b6d48ae5819e7a75.json",
+					"name" : "mav1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav1_syn::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav1_syn-RelWithDebInfo-4c8777e10c89d6c8b111.json",
+					"name" : "mav1_syn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav2-RelWithDebInfo-46d99dcd0b6ab7cac222.json",
+					"name" : "mav2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav2_syn::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav2_syn-RelWithDebInfo-489b39260ea6823d82ee.json",
+					"name" : "mav2_syn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav3-RelWithDebInfo-eb9f66ca749fda680734.json",
+					"name" : "mav3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav3_syn::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav3_syn-RelWithDebInfo-4761c9f6aed3b39d6cf9.json",
+					"name" : "mav3_syn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav4-RelWithDebInfo-9f2d929197eee96c6074.json",
+					"name" : "mav4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav4_syn::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav4_syn-RelWithDebInfo-ba992bafb01e6cfe2149.json",
+					"name" : "mav4_syn",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav_uninstall-RelWithDebInfo-7b26295709f02f32c353.json",
+					"name" : "mav_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-013fff2a58dd097220ca.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lee/workspace/ros2_ex_mav/build/mav",
+		"source" : "/home/lee/workspace/ros2_ex_mav/src/MAV"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

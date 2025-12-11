@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target leader[0m
+[ 40%] Built target mav2
+[ 40%] Built target mav1
+[ 46%] Built target keyboard_node
+[ 60%] Built target mav3
+[ 66%] [32mBuilding CXX object CMakeFiles/formation.dir/node/formation.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[ 86%] Built target mav4
+[ 93%] [32m[1mLinking CXX executable leader[0m
+[ 93%] Built target leader

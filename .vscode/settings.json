@@ -10,6 +10,9 @@
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
     "files.associations": {
-        "dense": "cpp"
-    }
+        "dense": "cpp",
+        "functional": "cpp",
+        "vector": "cpp"
+    },
+    "git.ignoreLimitWarning": true
 }

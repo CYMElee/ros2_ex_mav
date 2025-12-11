@@ -1,0 +1,1 @@
+/home/lee/workspace/ros2_ex_mav/build/px4_msgs/rosidl_generator_cpp/px4_msgs/msg/detail/gps_inject_data__type_support.hpp

@@ -1,6 +1,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
 #include <std_msgs/msg/int16.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp>
+#include <px4_msgs/msg/vehicle_odometry.hpp>
 
 #include <chrono>
 
@@ -28,9 +30,9 @@ public:
             "/ground_station/set_mode", qos,
             std::bind(&VirtualLeaderNode::mode_cb, this, std::placeholders::_1));
 
+
         timer_  = this->create_wall_timer(std::chrono::milliseconds(10), 
                                           std::bind(&VirtualLeaderNode::timer_callback, this));
-
         // ---------- 初始模式 ----------
         Change_Mode_Trigger_.data = MAV_mod::IDLE;
         }
@@ -52,11 +54,8 @@ private:
     // -------------------- Mode Callback --------------------
     void mode_cb(const std_msgs::msg::Int16::SharedPtr msg) {
         Change_Mode_Trigger_ = *msg;
-
-       // if (Change_Mode_Trigger_.data != MAV_mod::TAKEOFF) {
-        //    RCLCPP_INFO(this->get_logger(), "Mode: %d → Trajectory STOPPED (pos=0.3, vel=0)", Change_Mode_Trigger_.data);
-      //  }
     }
+    
 
     // -------------------- Timer Callback (100 Hz) --------------------
     void timer_callback() {
@@ -64,33 +63,25 @@ private:
         msg.data.resize(2);
         if (Change_Mode_Trigger_.data == MAV_mod::TAKEOFF) {
             // 使用 dt = 0.01 累計位置
-            float velocity = 0.1f;     // m/s
-            float dt = 0.01f;          // sec
-            virtual_pos_ += velocity * dt;       // pos += v * dt
-            if(virtual_pos_>=1)
-            {
-                velocity = 0;
-                virtual_pos_ = 1;
-            }
-            msg.data[0] = virtual_pos_;
-            msg.data[1] = velocity;
+
+            msg.data[0] = 0.6;
+            msg.data[1] = 0;
             state_pub_->publish(msg);
         } 
             
         else if (Change_Mode_Trigger_.data == MAV_mod::LAND) {
             // 使用 dt = 0.01 累計位置
-            float velocity = -0.1f;     // m/s
-            float dt = 0.01f;          // sec
-            virtual_pos_ += velocity * dt;       // pos += v * dt
-            if(virtual_pos_<=0.1)
-            {
-                velocity = 0;
-                virtual_pos_ = 0;
-            }
-            msg.data[0] = virtual_pos_;
-            msg.data[1] = velocity;
+            msg.data[0] = 0.1;
+            msg.data[1] = 0;
             state_pub_->publish(msg);
         }
+        else{
+            // 使用 dt = 0.01 累計位置
+            msg.data[0] = 0.1;
+            msg.data[1] = 0;
+            state_pub_->publish(msg);
+        }
+        
     }
 };
 

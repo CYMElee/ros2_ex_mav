@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target leader[0m
+[ 13%] Built target mav3
+[ 26%] Built target formation
+[ 40%] Built target mav1
+[ 60%] Built target keyboard_node
+[ 86%] Built target mav4
+[ 86%] Built target mav2
+[ 93%] [32mBuilding CXX object CMakeFiles/leader.dir/node/leader.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/leader.cpp:[m[K In constructor ‘[01m[KVirtualLeaderNode::VirtualLeaderNode()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/leader.cpp:35:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav1_pose_cb[m[K’ is not a member of ‘[01m[KVirtualLeaderNode[m[K’
+   35 |             std::bind(&VirtualLeaderNode::[01;31m[Kmav1_pose_cb[m[K, this, std::placeholders::_1));
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/leader.cpp:39:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav2_pose_cb[m[K’ is not a member of ‘[01m[KVirtualLeaderNode[m[K’
+   39 |             std::bind(&VirtualLeaderNode::[01;31m[Kmav2_pose_cb[m[K, this, std::placeholders::_1));
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/leader.cpp:43:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav3_pose_cb[m[K’ is not a member of ‘[01m[KVirtualLeaderNode[m[K’
+   43 |             std::bind(&VirtualLeaderNode::[01;31m[Kmav3_pose_cb[m[K, this, std::placeholders::_1));
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex_mav/src/px4_multi_uav/node/leader.cpp:47:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav4_pose_cb[m[K’ is not a member of ‘[01m[KVirtualLeaderNode[m[K’
+   47 |             std::bind(&VirtualLeaderNode::[01;31m[Kmav4_pose_cb[m[K, this, std::placeholders::_1));
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/leader.dir/build.make:76: CMakeFiles/leader.dir/node/leader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/leader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
